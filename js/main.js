@@ -34,6 +34,9 @@ $(document).ready(function(){
             $('.button-up').fadeOut();
         }
     });
+    $(document).scroll(function(e) {
+        $(window).scrollTop() > 100 ? $('.menu').addClass('menu__color') : $('.menu').removeClass('menu__color');
+    });
     
     /** При нажатии на кнопку мы перемещаемся к началу страницы */
     $('.button-up').click(function () {
@@ -253,7 +256,11 @@ $(document).ready(function(){
         $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1200);
         e.preventDefault();
       });
+
 });
+
+
+
 
 
 

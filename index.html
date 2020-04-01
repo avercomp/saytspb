@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/ubuntu.css">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
@@ -14,7 +14,11 @@
     <header class="header">
         <div class="container">
             <div class="menu">
-                <a  href="#" class="logo menu-logo">SAYTSPB</a>
+                <div class="logo">
+                    <img src="img/logo.png" alt="Логотип" class="logo-img">
+                    <a  href="#" class="logo menu-logo">SAYTSPB</a>
+                </div>
+
                 <nav class="nav menu-nav">
                     <a href="#hero" class="nav__item">продвижение</a>
                     <a href="#project" class="nav__item">аудит</a>
@@ -30,8 +34,17 @@
     </header>
     <main>
         <section class="hero" id="hero">
-            <div class="instagram hero__instagram">
-                <a href="#" class="instagram__link">instagram</a>
+            <div class="social hero__social">
+                <!-- <span class="social__line"></span> -->
+                <a href="#" class="social__link">
+                    <img src="img/tel.png" alt="телефон" class="cocial__link__img">
+                </a>
+                <a href="#" class="social__link">
+                    <img src="img/viber.png" alt="Viber" class="cocial__link__img">
+                </a>
+                <a href="#" class="social__link">
+                    <img src="img/mail.png" alt="Почта" class="cocial__link__img">
+                </a>
             </div>
             <div class="container">
             <div class="hero__content">
@@ -47,5 +60,8 @@
             </div>
         </section>
     </main>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
